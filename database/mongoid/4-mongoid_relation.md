@@ -79,8 +79,7 @@ class Author
                           inverse_of: :following
 
   has_and_belongs_to_many :following, 
-           class_name: "Author",
-           inverse_of: :followers
+           class_name: "Author"
 
 end
 ```
