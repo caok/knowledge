@@ -6,6 +6,28 @@ db.blog.insert(post)
 db.foo.batchInsert([{"_id" : 0}, {"_id" : 1}, {"_id" : 2}])
 ```
 
+###### 插入数据的3种方法 
+```
+db.inventory.insert( { _id: 10, type: "misc", item: "card", qty: 15 } )
+```
+
+```
+db.inventory.update(
+  { type: "book", item: "journal" },
+  { $set: { qty: 10 } },
+  { upsert: true }
+)
+
+===>
+{ "_id" : ObjectId("51e8636953dbe31d5f34a38a"), "type" : "book", "item" : "journal", "qty" : 10 }
+```
+
+```
+db.inventory.save( { type: "book", item: "notebook", qty: 40 } )
+===>
+{ "_id" : ObjectId("51e866e48737f72b32ae4fbc"), "type" : "book", "item" : "notebook", "qty" : 40 }
+```
+
 #### read
 ```
 db.blog.find()
