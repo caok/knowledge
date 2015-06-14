@@ -28,6 +28,9 @@ db.users.find({email: {"$ne" : "admin@dc.gov"}})
 # $in 用于查询一个键的多个值, 满足array中的一个即可
 db.people.find({last_name: {$in: ["White", "York"]}})
 
+{ _id: 1, item: "abc", qty: 10, tags: [ "school", "clothing" ], sale: false }
+db.inventory.find( {  tags: { $in: ["appliances", "school"] } } )
+
 # $or 用于对多个键做or查询, 只要满足一个条件
 db.people.find({$or: [{last_name: "White"}, {hbx_id: "234112"}]})
 
