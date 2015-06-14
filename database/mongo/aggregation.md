@@ -11,7 +11,7 @@
 ```
 db.articles.aggregate({"$project" : {"author" : 1}}, {"$group" : {"_id" : "$author", "count" : {"$sum" : 1}}}, {"$sort" : {"count" : -1}}, {"$limit" : 5})
 
-db.plans.aggregate({$project: {active_year: 1}}, {$group: {_id: "$active_year", count: {$sum: 1}}}, {$sort: {count: -1}})
+db.users.aggregate({$project: {age: 1}}, {$group: {_id: "$age", count: {$sum: 1}}}, {$sort: {count: -1}})
 ```
 
 project 中重命名(将_id重命名为userId, 并且将_id不显示出来)
@@ -22,14 +22,19 @@ db.people.aggregate({$project: {age: {$subtract: [{$year: new date()}, {$year: "
 
 ##### Group
 ```
-db.plans.aggregate({$group: {_id: "$active_year"}})
-db.plans.aggregate({$group: {_id: "$active_year", "num":{$sum: 1}}})   #统计每个active_year有多少个
-db.plans.aggregate({$group: {_id: {"year": "$active_year", "kind": "$metal_level"}}})
-db.plans.aggregate({$group: {_id: "$active_year", "maxage":{$max: "$maximum_age"}}})
+db.users.aggregate({$group: {_id: "$age"}})
+db.users.aggregate({$group: {_id: "$age", "num":{$sum: 1}}})   #统计每个age有多少个
+
+db.posts.aggregate({$group: {_id: "$category", "num":{$sum: 1}}})    # 每个类别的文章有几篇
+db.posts.aggregate({$group: {_id: {category: "$category", author: "$author"}, "num":{$sum: 1}}})   #每个作者每个类别分别有几篇文章
+db.posts.aggregate({$group: {_id: "$author", "maxscore": {$max: "$score"}}})   #每个作者获得的最高分
 ```
 
 ##### $unwind
 ```
+db.posts.aggregate({"$unwind" : "$comments"})  #如果一篇post中有两个comment，那么查询结果就会返回两条
+
+
 db.blog.findOne()
 {
   "_id" : ObjectId("50eeffc4c82a5271290530be"),
@@ -69,7 +74,7 @@ db.blog.findOne()
 
 ##### Map-reduce
 ```
-map = function() { emit(this.active_year, {count: 1}); }
+map = function() { emit(this.category, {count: 1}); }
 
 reduce = function(key, values) {
   total = 0;
@@ -80,28 +85,28 @@ reduce = function(key, values) {
   return {"count" : total};
 }
 
-mr = db.runCommand({"mapreduce": "plans", "map": map, "reduce": reduce, "out": "result"})
+mr = db.runCommand({"mapreduce": "posts", "map": map, "reduce": reduce, "out": "result"})
 db[mr.result].find()
 db.result.find();
 ```
 
 ##### Aggregation Command
 ```
-db.plans.count()
-db.plans.count({active_year: 2014})
+db.posts.count()
+db.posts.count({category: "ruby"})
 
-db.runCommand({"distinct" : "plans", "key" : "active_year"})
+db.runCommand({"distinct" : "posts", "key" : "category"})
 ```
 
 ```
-results = db.plans.group({
-  key:      {"active_year": true},
-  initial:  {num: 0, ehbs: 0.0},
+results = db.posts.group({
+  key:      {"author": true},
+  initial:  {num: 0, scores: 0.0},
   reduce:   function(doc, agg) {
                agg.num += 1;
-               agg.ehbs += doc.ehb;
+               agg.scores += doc.score;
             },
-  finalize: function(doc) {doc.average_ehb = doc.ehbs / doc.num;}
+  finalize: function(doc) {doc.average_score = doc.scores / doc.num;}
 }) 
 
 ```
