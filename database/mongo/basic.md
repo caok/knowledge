@@ -58,3 +58,12 @@ db.blog.remove({title : "My Blog Post"})
 ps = db.runCommand({"findAndModify" : "processes", "query" : {"status" : "READY"}, "sort" : {"priority" : -1}, "remove" : true}).value
 do_something(ps)
 ```
+
+#### backup
+```
+mongodump --host localhost --port 27017 
+```
+#### restore
+```
+mongorestore --host localhost --drop --port 27017 --db enroll_test dump/enroll_test
+```
