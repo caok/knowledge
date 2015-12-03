@@ -7,3 +7,5 @@ ps -ef | grep defunct | grep -v grep | cut -b8-20 | xargs kill -9
 清除无用软件： sudo apt-get remove --purge 软件名
 清除残余配置文件：dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P -
 清除孤立包：sudo apt-get install deborphan -y
+
+curl -X POST --data "params1=12&params2=abc" http://demandapi.bidstalk.com/advertiser/auth
