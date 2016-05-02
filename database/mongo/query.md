@@ -13,6 +13,7 @@ db.users.findOne({})                     # 返回一条记录
 
 #  指定哪些字段显示(1)，哪些字段隐藏(0), 只显示email
 db.users.find({name: /jack/}, {name: 1, _id: 0})
+db.users.find(:name => {:$exists => true}).projection({:_id => false})
 ```
 
 #### 比较查询

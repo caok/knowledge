@@ -1,3 +1,6 @@
+pg 
+Track.where.not("device_platform_id ~* ?", '\w{8}-\w{4}')
+
 ### 图片上传时，原先时put请求的自动变为post请求
 active admin 中在处理有图片的form时也可以同样处理
 ```
