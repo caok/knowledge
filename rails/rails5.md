@@ -1,3 +1,159 @@
+#How to Generate Weighted Random Numbers(http://www.blackbytes.info/2016/05/weighted-random-numbers/)
+有权重的生成随机数
+情景: 比如抽奖, 有更多门票的人，中奖的概率越大
+For example, if John buys 4 raffle tickets and David only buys 1, John will have 4 times more chances to win than David.
+```
+users  = { john: 4, david: 1 }
+raffle = []
+ 
+users.map do |name, tickets|
+  tickets.times { raffle << name }
+end
+ 
+p raffle
+# [:john, :john, :john, :john, :david]
+ 
+p raffle.sample
+# :john
+```
+
+There is another way you can do this that is more memory-efficient, the trade-off is that picking a random value is slower.
+
+The idea is to pick a random number between 1 and the sum of all the weights, and then loop until you find a weight that is lower or equal than this number.
+```
+def random_weighted(weighted)
+  max    = sum_of_weights(weighted)
+  target = rand(1..max)
+ 
+  weighted.each do |item, weight|
+    return item if target <= weight
+    target -= weight
+  end
+end
+ 
+def sum_of_weights(weighted)
+  weighted.inject(0) { |sum, (item, weight)| sum + weight }
+end
+```
+example
+```
+counts = Hash.new(0)
+ 
+def pick_number
+  random_weighted(cats: 2, dogs: 1)
+end
+ 
+1000.times { counts[pick_number] += 1 }
+=> {:cats=>691, :dogs=>309}
+```
+
+
+#Rails 5 adds a way to get information about types of failed validations(5/3)
+```
+class User < ApplicationRecord
+  validates :email, presence: true
+end
+
+>> user = User.new
+>> user.valid?
+=> false
+
+#rails4
+>> user.errors.messages
+=> {:email=>["can't be blank"]}
+
+#rails5
+>> user.errors.details
+=> {:email=>[{:error=>:blank}]}
+```
+
+```
+# Custom validator type
+>> user = User.new
+>> user.errors.add(:name, :not_valid, message: "The name appears invalid")
+
+>> user.errors.details
+=> {:name=>[{:error=>:not_valid}]}
+
+# Custom error with default validator type :invalid
+
+>> user = User.new
+>> user.errors.add(:name)
+
+>> user.errors.details
+=> {:name=>[{:error=>:invalid}]}
+
+# More than one error on one attribute
+
+>> user = User.new
+>> user.errors.add(:password, :invalid_format, message: "Password must start with an alphabet")
+>> user.errors.add(:password, :invalid_length, message: "Password must have atleast 8 characters")
+
+>> user.errors.details
+=> {:password=>[{:error=>:invalid_format}, {:error=>:invalid_length}]}
+```
+rails4中想要此类功能的话，可以使用gem: active_model-errors_details
+
+
+#Rails 5 - What's in it for me?(4/22)
+Major Features
+Ruby 2.2.2+ dependency.
+Action Cable.
+API only apps.
+
+Features for Development mode
+Puma as default web server.
+rails CLI over rake.
+Restarting app using rails restart.
+Enable caching using rails dev:cache.
+Enhanced filtering of routes using rails routes -g
+Evented file system monitor.
+
+Features for Test mode
+Test Runner.
+Changes to controller tests.
+
+Features related to Caching
+Cache content forever using http_cache_forever.
+Collection caching using ActiveRecord#cache_key.
+Partials caching using multi_fetch_frgaments.
+Caching in Action Mailer views.
+
+Changes in Active Record
+Introduction of ApplicationRecord.
+ActiveRelation#or.
+has_secure_token for generating secure tokens.
+Versioned migrations for backward compatibility.
+
+Changes in Active Support
+Improvements to Date/Time.
+Enumerable#pluck, Enumerable#without.
+Change in behavior related to halting callback chains.
+
+#Rails 5 officially supports MariaDB(4/21)
+rails5官方开始支持MariaDB
+
+--------------------------------------------------------------------------------------------
+#Changes to test controllers in Rails 5(4/19)
+```
+#rails 4
+class ProductsControllerTest < ActionController::TestCase
+  def test_index_response
+    get :index
+    assert_response :success
+  end
+end
+#rails 5, 用action会导致URI::InvalidURIError: bad URI
+class ProductsControllerTest < ActionDispatch::IntegrationTest
+  def test_index
+    get products_url
+    assert_response :success
+  end
+end
+```
+rails5 中移除了assert_template和assigns， 将其抽成了gem( rails-controller-testing)
+
+
 #Parameter filtering enhancement in Rails 5(3/7)
 rails5中将filter_parameters做了增强
 
