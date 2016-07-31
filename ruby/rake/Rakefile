@@ -1,0 +1,23 @@
+require "yaml"
+
+rule %r"\w+/import.timestamp" => "%d/user-info.yaml" do |t|
+  info = YAML.load(File.read(t.source))
+  puts "source: #{t.source}"
+  puts "name: #{t.name}"
+  puts "Importing user #{t.source.pathmap('%d')}"
+  # ...
+  touch t.name
+end
+ 
+desc "import data for user"
+task :import, :email do |t, args|
+    Rake::Task["#{args[:email]}/import.timestamp"].invoke
+end
+
+# We want to write a Rake rule which, for a given user, will perform some kind of import action(导入user-info.yaml), and then create a timestamp file to mark that user import as complete.
+
+#rake import[tomservo]
+#source: tomservo/user-info.yaml
+#name: tomservo/import.timestamp
+#Importing user tomservo
+#touch tomservo/import.timestamp
