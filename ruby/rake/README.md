@@ -102,5 +102,8 @@ namespace :home do
 end
 ```
 
+rake -T
+rake -P
+
 * https://github.com/ruby/rake
 * http://madewithenvy.com/ecosystem/articles/2014/rake-rule-tasks/

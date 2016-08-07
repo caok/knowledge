@@ -1,0 +1,8 @@
+#file 'foo.txt' do
+  #touch 'foo.txt'
+#end
+
+
+file 'foo.txt' => 'bar.txt' do
+  touch 'foo.txt'
+end
