@@ -1,0 +1,19 @@
+#rule /foo/ do |task|
+  #puts 'called task named: %s' % task.name
+#end
+
+#rule /\.txt$/ do |task|
+  #puts 'creating file: %s' % task.name
+  #touch task.name
+#end
+
+#rule '.dependency' do |task|
+  #puts 'called task: %s' % task.name
+#end
+#rule '.task' => '.dependency' do |task|
+  #puts 'called task: %s' % task.name
+#end
+
+rule '.txt' => '.template' do |task|
+  cp task.source, task.name
+end
