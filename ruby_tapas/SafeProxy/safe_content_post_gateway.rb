@@ -1,7 +1,7 @@
 require "delegate"
-require "./post"
+require "./content_post_gateway"
 
-class SafeContentPostGateway < DelegateClass(Post)
+class SafeContentPostGateway < DelegateClass(ContentPostGateway)
   def initialize(target, on_error: ->(*){})
     super(target)
     @error_handler = on_error
