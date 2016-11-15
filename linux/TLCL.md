@@ -102,7 +102,7 @@ echo $(((5**2) * 3))
 echo Five divided by two equals $((5/2))
 ```
 
-##### 花括号展开
+##### 花括号展开 (注意空格)
 
 ```shell
 echo Front-{A,B,C}-Back
@@ -220,6 +220,10 @@ ls -l foo.txt
 | go=rw     | 给群组的主人和任意文件拥有者的人读写权限。如果群组的主人或全局之前已经有了执行的权限，他们将被移除。 |
 | u+x,go=rw | 给文件拥有者执行权限并给组和其他人读和执行的权限。多种设定可以用逗号分开。    |
 
+o:other u:self g:group
+
+r:read w:write x:执行
+
 ##### umask － 设置默认权限
 
 ```
@@ -303,3 +307,9 @@ top
 ```shell
 killall xlogo #杀死所有xlog进程
 ```
+
+
+# 存储媒介
+
+
+
