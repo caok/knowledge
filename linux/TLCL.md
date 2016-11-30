@@ -309,7 +309,167 @@ killall xlogo #杀死所有xlog进程
 ```
 
 
+
+## 软件包管理
+
+查找已经安装过的某个软件vim
+
+```
+aptitude search ~i | grep vim
+dpkg-query -l | grep vim
+dpkg-query -l | grep '^ii.*v.m'
+```
+
+检索所需要的软件包
+
+```
+aptitude search vim
+```
+
+
+
 # 存储媒介
+
+/etc/fstab 的文件可以列出系统启动时要挂载的设备（典型地，硬盘分区）
+
+```shell
+LABEL=/12               /               ext3        defaults        1   1
+LABEL=/home             /home           ext3        defaults        1   2
+LABEL=/boot             /boot           ext3        defaults        1   2
+```
+
+| 字段   | 内容     | 说明                                       |
+| ---- | ------ | ---------------------------------------- |
+| 1    | 设备名    | 传统上，这个字段包含与物理设备相关联的设备文件的实际名字，比如说/dev/hda1（第一个 IDE 通道上第一个主设备分区）。然而今天的计算机，有很多热插拔设备（像 USB 驱动设备），许多 现代的 Linux 发行版用一个文本标签和设备相关联。当这个设备连接到系统中时， 这个标签（当储存媒介格式化时，这个标签会被添加到存储媒介中）会被操作系统读取。 那样的话，不管赋给实际物理设备哪个设备文件，这个设备仍然能被系统正确地识别。 |
+| 2    | 挂载点    | 设备所连接到的文件系统树的目录。                         |
+| 3    | 文件系统类型 | Linux 允许挂载许多文件系统类型。大多数本地的 Linux 文件系统是 ext3， 但是也支持很多其它的，比方说 FAT16 (msdos), FAT32 (vfat)，NTFS (ntfs)，CD-ROM (iso9660)，等等。 |
+| 4    | 选项     | 文件系统可以通过各种各样的选项来挂载。有可能，例如，挂载只读的文件系统， 或者挂载阻止执行任何程序的文件系统（一个有用的安全特性，避免删除媒介。） |
+| 5    | 频率     | 一位数字，指定是否和在什么时间用 dump 命令来备份一个文件系统。       |
+| 6    | 次序     | 一位数字，指定 fsck 命令按照什么次序来检查文件系统。            |
+
+##### 查看挂载的文件系统列表(mount)
+
+```shell
+当有插入光盘时，通过mount可以观察到新增加了
+/dev/hdc on /media/live-1.0.10-8 type iso9660 (ro,noexec,nosuid,nodev,uid=500)
+
+mkdir /mnt/cdrom  #创建挂载点
+mount -t iso9660 /dev/hdc /mnt/cdrom   #-t 选项用来指定文件系统类型
+卸载该设备，必须确保没有用户或进程在使用该设备，工作路径也不能再/mnt/cdrom下，否则会导致设备忙碌
+umount /dev/hdc
+```
+
+
+
+## 网络系统
+
+#### 检查和监测网络
+
+ping 命令发送一个特殊的网络数据包，叫做 IMCP ECHO_REQUEST，并且会持续在特定的时间间隔内（默认是一秒）发送数据包，直到它被中断。
+
+大多数网络设备（包括 Linux 主机）都可以被配置为忽略这些数据包， 出于网络安全 原因，部分地遮蔽一台主机免受一个潜在攻击者地侵袭。
+
+##### traceroute - 打印到一台网络主机的路由数据包
+
+看一下到达 slashdot.org 网站，需要经过的路由 器
+
+```shell
+traceroute slashdot.org
+```
+
+##### netstat - 打印网络连接，路由表，接口统计数据，伪装连接，和多路广播成员
+
+“-ie”选项，能够查看系统中的网络接口, 等同于ifconfig
+
+“-r”选项会显示内核的网络路由表 route
+
+## 查找文件
+
+```
+find ~ -type f -name '*.csv'
+find ~ -type f -name \*.csv
+```
+
+当前目录有多少文件
+
+```shell
+ find ~ -type d | wc -l
+```
+
+找大于1M的文件
+
+```shell
+find ~ -type f -size +1M | wc -l
+find ~ -type f -name \*.* -size +1M | wc -l
+```
+
+```
+find ~ \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \) | wc -l
+```
+
+```shell
+find ~ \( -type f -mtime 6 \) -exec ls -ll '{}' ';'
+find ~ \( -type f -mtime 6 \) | xargs ls -ll
+```
+
+找到比bad.txt更新的文件
+
+```
+find ~ \( -type f -mtime 6 -newer /home/deploy/bad.txt \)
+```
+
+
+
+```shell
+ls -l /etc | gzip > foo.txt.gz
+mkdir -p playground/dir-{00{1..9},0{10..99},100}
+touch playground/dir-{00{1..9},0{10..99},100}/file-{A..Z}
+
+find playground -name 'file-A' | tar cf - --files-from=- | gzip > playground.tgz
+find playground -name 'file-A' | tar czf playground.tgz -T -
+
+ls | vim -
+ls | xargs vim
+
+du -ah ~ | sort -n -r | head -n 10
+find ~ -printf '%s %p\n'| sort -nr | head -10 | xargs ls -sh
+```
+
+
+
+```shell
+for i in {1..10}; do echo "(${RANDOM:0:3}) ${RANDOM:0:3}-${RANDOM:0:4}" >> phonelist.txt; done
+```
+
+```
+find . -name \*.txt | xargs du -h | sort | head -n 5
+```
+
+
+
+## 格式化输出
+
+##### nl - 添加行号
+
+```shell
+nl distros.txt | head   #默认是非空行
+等同于
+nl -b t distros.txt | head # a = 数所有行， n = 无
+nl -w 3 -s ' '  xxx.txt
+nl -n rz xxx.txt
+```
+
+##### fold - 限制文件行宽
+
+```shell
+echo "The quick brown fox jumped over the lazy dog." | fold -w 12
+# -s 选项将让 fold 分解到最后可用的空白 字符，即会考虑单词边界, 单词边界不会被分解
+echo "The quick brown fox jumped over the lazy dog." | fold -w 12 -s
+```
+
+#### fmt - 一个简单的文本格式器
+
+fmt 程序同样折叠文本，外加很多功能。它接受文本或标准输入并且在文本流上呈现照片转换。基础来说，他填补并且将文本粘帖在 一起并且保留了空白符和缩进。
 
 
 
