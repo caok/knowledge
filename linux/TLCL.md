@@ -473,3 +473,477 @@ fmt 程序同样折叠文本，外加很多功能。它接受文本或标准输�
 
 
 
+ls -l ~/ken_lab | sort --key 5nr
+
+diff -Naur old.txt new.txt > patch.txt
+
+cat patch.txt
+
+echo "aaaaaabbbbbbbbbbbbcabababababcabc" | sed 's/b\{4\}/BA/g'
+
+
+
+## Shell脚本
+
+把一个文件名从 myfile 改为 myfile1
+
+```shell
+filename="myfile"
+touch $filename
+mv $filename ${filename}1   #通过添加花括号，shell 不再把末尾的1解释为变量名的一部分
+```
+
+```shell
+#!/bin/bash
+# Program to output a system information page
+TITLE="System Information Report For $HOSTNAME"
+CURRENT_TIME=$(date +"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+echo "<HTML>
+        <HEAD>
+                <TITLE>$TITLE</TITLE>
+        </HEAD>
+        <BODY>
+                <H1>$TITLE</H1>
+                <P>$TIME_STAMP</P>
+        </BODY>
+</HTML>"
+```
+
+#### Here Documents
+
+```shell
+#!/bin/bash
+# Program to output a system information page
+TITLE="System Information Report For $HOSTNAME"
+CURRENT_TIME=$(date +"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+cat << _EOF_
+<HTML>
+         <HEAD>
+                <TITLE>$TITLE</TITLE>
+         </HEAD>
+         <BODY>
+                <H1>$TITLE</H1>
+                <P>$TIME_STAMP</P>
+         </BODY>
+</HTML>
+_EOF_
+```
+
+字符串_EOF_（意思是“文件结尾”， 一个常见用法）被选作为 token，并标志着嵌入文本的结尾。注意这个 token 必须在一行中单独出现，并且文本行中 没有末尾的空格。
+
+here document 很大程度上和 echo 一样，除了默认情况下，here documents 中的单引号和双引号会失去它们在 shell 中的特殊含义。
+
+如果我们把重定向操作符从 “<<” 改为 “<<-”，shell 会忽略在此 here document 中开头的 tab 字符。 这就能缩进一个 here document，从而提高脚本的可读性
+
+```shell
+[me@linuxbox ~]$ foo="some text"
+[me@linuxbox ~]$ cat << _EOF_
+> $foo
+> "$foo"
+> '$foo'
+> \$foo
+> _EOF_
+some text
+"some text"
+'some text'
+```
+
+```shell
+#!/bin/bash
+# Program to output a system information page
+TITLE="System Information Report For $HOSTNAME"
+CURRENT_TIME=$(date +"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+report_uptime () {
+  cat <<- _EOF_
+  <H2>System Uptime</H2>
+  <PRE>$(uptime)</PRE>
+_EOF_     #结束标识前不能有空格
+  return
+}
+report_disk_space () {
+  cat <<- _EOF_
+  <H2>Disk Space Utilization</H2>
+  <PRE>$(df -h)</PRE>
+_EOF_
+  return
+}
+report_home_space () {
+  cat <<- _EOF_
+  <H2>Home Space Utilization</H2>
+  <PRE>$(du -sh /home/*)</PRE>
+_EOF_
+  return
+}
+cat << _EOF_
+<HTML>
+    <HEAD>
+        <TITLE>$TITLE</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>$TITLE</H1>
+        <P>$TIME_STAMP</P>
+        $(report_uptime)
+        $(report_disk_space)
+        $(report_home_space)
+    </BODY>
+</HTML>
+_EOF_
+```
+
+
+
+## 第33章 位置参数
+
+```shell
+#!/bin/bash
+# posit-param: script to view command line parameters
+echo "
+Number of arguments: $#
+\$0 = $0
+\$1 = $1
+\$2 = $2
+\$3 = $3
+\$4 = $4
+\$5 = $5
+\$6 = $6
+\$7 = $7
+\$8 = $8
+\$9 = $9
+"
+```
+
+位置参数 $0 总会包含命令行中出现的第一个单词，也就是已执行程序的路径名
+
+ $# 可以得到命令行参数个数的变量
+
+```shell
+bash posit-param a b c d
+=>
+Number of arguments: 4
+$0 = /home/me/bin/posit-param
+$1 = a
+$2 = b
+$3 = c
+$4 = d
+$5 =
+$6 =
+$7 =
+$8 =
+$9 =
+
+bash posit-param *
+# 通配符*会展开多个参数(当前路径下的文件)
+=>
+Number of arguments: 8
+$0 = posit-param
+$1 = TLCL.md
+$2 = brew.md
+$3 = command
+$4 = elk.md
+$5 = graylog.md
+$6 = jenkins.md
+$7 = posit-param
+$8 = sys_info_page
+$9 =
+```
+
+**shift 命令**， 就会导致所有的位置参数 “向下移动一个位置”
+
+```shell
+#!/bin/bash
+# posit-param2: script to display all arguments
+count=1
+while [[ $# -gt 0 ]]; do
+    echo "Argument $count = $1"
+    count=$((count + 1))
+    shift
+done
+```
+
+```shell
+echo $1
+
+file_info () {
+  # file_info: function to display file information
+  if [[ -e $1 ]]; then
+      echo -e "\nFile Type:"
+      file $1
+      echo -e "\nFile Status:"
+      stat $1
+  else
+      echo "$FUNCNAME: usage: $FUNCNAME file" >&2
+      return 1
+  fi
+}
+
+echo "call file_info function:"
+file_info "graylog.md";
+```
+
+| 参数   | 描述                                       |
+| ---- | ---------------------------------------- |
+| $*   | 展开成一个从1开始的位置参数列表。当它被用双引号引起来的时候，展开成一个由双引号引起来 的字符串，包含了所有的位置参数，每个位置参数由 shell 变量 IFS 的第一个字符（默认为一个空格）分隔开。 |
+| $@   | 展开成一个从1开始的位置参数列表。当它被用双引号引起来的时候， 它把每一个位置参数展开成一个由双引号引起来的分开的字符串。 |
+
+$*   => $1 $2 $3...
+
+"$*"  => "$1 $2 $3"
+
+$@  => $1 $2 $3
+
+"$@"  => "$1" "$2" "$3"
+
+```shell
+#!/bin/bash
+# posit-params3 : script to demonstrate $* and $@
+print_params () {
+    echo "\$1 = $1"
+    echo "\$2 = $2"
+    echo "\$3 = $3"
+    echo "\$4 = $4"
+}
+pass_params () {
+    echo -e "\n" '$* :';      print_params   $*
+    echo -e "\n" '"$*" :';    print_params   "$*"    # "word words with spaces"
+    echo -e "\n" '$@ :';      print_params   $@
+    echo -e "\n" '"$@" :';    print_params   "$@"    # "word" "words with spaces"
+}
+pass_params "word" "words with spaces"
+```
+
+
+
+## 第34章 流程控制：for 循环
+
+```shell
+for i in A B C D; do echo $i; done
+#花括号展开
+for i in {A..D}; do echo $i; done
+#路径名展开
+for i in distros*.txt; do echo $i; done
+```
+
+```shell
+#命令替换
+#!/bin/bash
+# longest-word : find longest string in a file
+while [[ -n $1 ]]; do    #字符串不为null，长度大于零
+    if [[ -r $1 ]]; then  #文件可读
+        max_word=
+        max_len=0
+        for i in $(strings $1); do  #将文件的内容产生一个可读的文本格式的 “words” 列表
+            len=$(echo $i | wc -c)
+            if (( len > max_len )); then
+                max_len=$len
+                max_word=$i
+            fi
+        done
+        echo "$1: '$max_word' ($max_len characters)"
+    fi
+    shift
+done
+
+或者
+#!/bin/bash
+# longest-word2 : find longest string in a file
+for i; do
+    if [[ -r $i ]]; then
+        max_word=
+        max_len=0
+        for j in $(strings $i); do
+            len=$(echo $j | wc -c)       #使用参数展开  ${#j}
+            if (( len > max_len )); then
+                max_len=$len
+                max_word=$j
+            fi
+        done
+        echo "$i: '$max_word' ($max_len characters)"
+    fi
+done
+```
+
+```shell
+#C 语言格式
+#!/bin/bash
+# simple_counter : demo of C style for command
+for (( i=0; i<5; i=i+1 )); do
+    echo $i
+done
+```
+
+
+
+## 第35章 字符串和数字
+
+#### 参数展开
+
+$a  ==> ${a}
+
+```
+echo "${a}_file"
+```
+
+位置参数 ${11}
+
+##### ${parameter:-word}
+
+若 parameter 没有设置（例如，不存在）或者为空，展开结果是 word 的值。若 parameter 不为空，则展开结果是 parameter 的值。
+
+##### *${parameter:=word}*
+
+若 parameter 没有设置或为空，展开结果是 word 的值。另外，word 的值会**赋值**给 parameter。 若 parameter 不为空，展开结果是 parameter 的值。
+
+##### ${parameter:?word}
+
+若 parameter 没有设置或为空，这种展开导致脚本**带有错误退出**，并且 word 的内容会发送到标准错误。若 parameter 不为空， 展开结果是 parameter 的值。
+
+##### ${parameter:+word}
+
+若 parameter 没有设置或为空，展开结果为空。若 parameter 不为空， 展开结果是 word 的值会**替换掉 **parameter 的值；然而，parameter 的值不会改变。
+
+#### 返回变量名的参数展开
+
+${#parameter}
+
+展开成由 parameter 所包含的字符串的长度
+
+*${parameter:offset}*
+
+*${parameter:offset:length}*
+
+这些展开用来从 parameter 所包含的字符串中提取一部分字符
+
+```shell
+[me@linuxbox ~]$ foo="This string is long."
+[me@linuxbox ~]$ echo ${foo:5}
+string is long.
+[me@linuxbox ~]$ echo ${foo:5:6}
+string
+```
+
+*${parameter#pattern}*
+
+*${parameter##pattern}*
+
+这些展开会从 paramter 所包含的字符串中清除开头一部分文本
+
+```shell
+[me@linuxbox ~]$ foo=file.txt.zip
+[me@linuxbox ~]$ echo ${foo#*.}
+txt.zip
+[me@linuxbox ~]$ echo ${foo##*.}
+zip
+```
+
+*${parameter%pattern}*
+
+*${parameter%%pattern}*
+
+这些展开和上面的 # 和 ## 展开一样，除了它们清除的文本从 parameter 所包含字符串的末尾开始，而不是开头。
+
+*${parameter/pattern/string}*
+
+*${parameter//pattern/string}*
+
+*${parameter/#pattern/string}*
+
+*${parameter/%pattern/string}*
+
+```shell
+[me@linuxbox~]$ foo=JPG.JPG
+[me@linuxbox ~]$ echo ${foo/JPG/jpg}    #替换第一个
+jpg.JPG
+[me@linuxbox~]$ echo ${foo//JPG/jpg}    #替换全部
+jpg.jpg
+[me@linuxbox~]$ echo ${foo/#JPG/jpg}    #从开头开始匹配
+jpg.JPG
+[me@linuxbox~]$ echo ${foo/%JPG/jpg}    #从末尾开始匹配
+JPG.jpg
+```
+
+使用参数展开效率更高
+
+#### 大小写转换
+
+使用 declare 命令，我们能强制一个 变量总是包含所需的格式，无论如何赋值给它。
+
+```shell
+#!/bin/bash
+# ul-declare: demonstrate case conversion via declare
+declare -u upper
+declare -l lower
+if [[ $1 ]]; then
+    upper="$1"
+    lower="$1"
+    echo $upper
+    echo $lower
+fi
+```
+
+大小写转换参数展开
+
+| 格式             | 结果                                  |
+| -------------- | ----------------------------------- |
+| ${parameter,,} | 把 parameter 的值全部展开成小写字母。            |
+| ${parameter,}  | 仅仅把 parameter 的第一个字符展开成小写字母。        |
+| ${parameter^^} | 把 parameter 的值全部转换成大写字母。            |
+| ${parameter^}  | 仅仅把 parameter 的第一个字符转换成大写字母（首字母大写）。 |
+
+```shell
+#!/bin/bash
+# ul-param - demonstrate case conversion via parameter expansion
+if [[ $1 ]]; then
+    echo ${1,,}
+    echo ${1,}
+    echo ${1^^}
+    echo ${1^}
+fi
+```
+
+#### 算术求值和展开
+
+```shell
+$((expression))
+```
+
+数基
+
+| 表示法         | 描述                               |
+| ----------- | -------------------------------- |
+| number      | 默认情况下，没有任何表示法的数字被看做是十进制数（以10为底）。 |
+| 0number     | 在算术表达式中，以零开头的数字被认为是八进制数。         |
+| 0xnumber    | 十六进制表示法                          |
+| base#number | number 以 base 为底                 |
+
+```shell
+#!/bin/bash
+# modulo : demonstrate the modulo operator
+for ((i = 0; i <= 20; i = i + 1)); do
+    remainder=$((i % 5))
+    if (( remainder == 0 )); then
+        printf "<%d> " $i
+    else
+        printf "%d " $i
+    fi
+done
+printf "\n"
+```
+
+##### 赋值运算符
+
+```shell
+[me@linuxbox ~]$ foo=
+[me@linuxbox ~]$ echo $foo
+[me@linuxbox ~]$ if (( foo = 5 ));then echo "It is true."; fi
+It is true.
+[me@linuxbox ~]$ echo $foo
+5
+```
+
+首先我们给变量 foo 赋了一个空值，然后验证 foo 的确为空。下一步，我们执行一个 if 复合命令 (( foo = 5 ))。 这个过程完成两件有意思的事情：1）它把5赋值给变量 foo，2）它计算测试条件为真，因为 foo 的值非零。
+
+
+
