@@ -6,9 +6,13 @@
 
 推销产品时，要改变顾客对你商品的认知，让他从不愿意花钱的心理账户，转移到愿意为此付钱的那个心理账户里面去，这样客户会变得大方起来。
 
+![001](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/001.png)
+
 ### 002 不要为打翻的牛奶哭泣**
 
 **沉没成本**：人们在决定做一件事情的时候，不仅仅是看这件事未来是否对他有好处，同时也会注意自己是不是在过去，已经在这件事情上面有过投入。
+
+![002](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/002.png)
 
 ### 003 贵和便宜，是相对的
 
@@ -20,9 +24,13 @@
 
 3.把廉价的配置品，搭配在一个非常贵的东西上一起卖，那相对于单独卖这个廉价商品，会更容易让消费者感到价值感。
 
+![003](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/003.png)
+
 ### 004 得到100元，可以弥补失去的100元吗？
 
 **损失规避**：得到的快乐其实并没有办法缓解失去的痛苦，心理学家把这种对损失更加敏感的底层心理状态叫做损失规避。
+
+![004](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/004.png)
 
 ### 005 拉个垫背的，显示你便宜
 
@@ -30,15 +38,21 @@
 
 1.避免极端， 2.权衡对比
 
+![005](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/005.png)
+
 ### 006 比电商更先进的零售方式是.....
 
 **流量成本**：零售的基本逻辑，是流量成本。流量成本指的是我们每获得一个客户，要为此付出去的基本价格。如果把你的销售过程比喻成一条河床的话，那么这个流量，就是从不同渠道、不断流入河床的那个水源。你的河床涉及的再科学再完美，但是只要没有水源，一切商业模式都是摆设。
+
+![006](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/006.png)
 
 ### 007 哪有什么一分价钱一分货
 
 **定倍率**：商品的零售价格除以成本价的那个倍数。
 
 鞋服行业，一般是5-10倍。化妆品行业: 一般是20-50倍
+
+![007](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/007.png)
 
 ### 008 该把货卖得更贵，还是卖得更多？
 
@@ -48,21 +62,31 @@
 
 2.扩大这个商品的销量(卖的更多)
 
+![008](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/008.png)
+
 ### 009 风险不是你想买，想买就能买
 
 **库存搏差价(风险)**：总代所做的生意，其本质就是告诉品牌商，把你的库存风险卖给我，就算最后卖不出去，这个钱我照付给你，风险我来承担，但是作为交换，请你给我更大的差价空间，这种用库存搏差价的商业模式，其实就是在买卖库存风险。
+
+![009](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/009.png)
 
 ### 010 黄牛，商业世界的黑客？
 
 **规则之缝(黄牛经济)**
 
+![010](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/010.png)
+
 ### 011 在美国，你会吃麦当劳吗？
 
 **信息对称**： 在市场条件下，想要实现有效的交易，交易双方掌握的信息必须对称， 信息如果不对称，掌握信息比较充分的人员往往会处于比较有利的地位。
 
+![011](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/011.png)
+
 ### 012 互联网与生俱来的洪荒之力 
 
 **网络效应**： 某种产品对一名用户的价值，取决于使用这个产品的其他用户的数量，在经济学中，我们把它称为：网络效应。用户越多，越有价值；越有价值，用户越多；不断地积累用户的黏性。甚至，一旦用户总数突破一个临界点之后，会最终进入"赢家通吃"的状态。正如著名的投资人克里斯·迪克森所说：为工具而来，为网络而留。(微信)
+
+![012](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/012.png)
 
 ### 013 理论上，你可以服务全人类 
 
@@ -73,6 +97,8 @@
 Uber、Airbnb  VS 传统出租车公司、传统酒店
 
 Uber增加一辆车和一名司机的成本，Airbnb增加一间新的出租屋的成本，都基本为零。
+
+![013](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/013.png)
 
 ### 014 商业的未来是小众市场？
 
@@ -88,6 +114,8 @@ Uber增加一辆车和一名司机的成本，Airbnb增加一间新的出租屋�
 
 * 借助大平台，做小众爆品
 * 借助多团队，做快速个性
+
+![014](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/014.png)
 
 ### 015 所有的免费，都是"二段收费" 
 
@@ -105,9 +133,12 @@ Uber增加一辆车和一名司机的成本，Airbnb增加一间新的出租屋�
 * 先免后收 (低端免费，高端收费。云服务基础服务免费，更大的空间收费。带广告免费，去广告收费)
 * 三方市场(如果你想得到的，是用户的注意力、行为习惯、人际关系，那你就可以把你对他的一部分产品免费。比如你把微信公号的文章免费，再在公号上做广告向第三方收费；俱乐部对女士免费，对男士收费；博物馆对孩子免费，向父母收费)
 
+![015](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/015.png)
+
 ### 016 抓住老鼠的就是好猫？ 
 
 
 
 
 
+![016](https://raw.githubusercontent.com/caok/knowledge/master/books/dedao/016.png)
