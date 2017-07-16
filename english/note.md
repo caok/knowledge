@@ -1,3 +1,53 @@
+2017-7-10
+=========
+in full force
+to pay in full
+personification
+to hurl = to throw
+to file = to walk in a line
+to cause = to will
+
+give up
+Ex. We need to give our car up.
+Ex. I give up.
+--> I quit
+I give up on (something)
+Ex. I gave up on my piano lessons because I got busy.
+
+grow apart (from)
+---> as your grow older, you become less close with someone (maybe because you start to become different, you are far away from each other, etc.)
+Ex. After college, I grew apart from my friend.
+
+hit it off
+---> when we met for the first time, we got along very well
+Ex. They really hit it off on Friday when they met.
+
+to mock
+---> to imitate (in a slightly negative way)
+to make fun of
+to mock-up
+---> to create a pretend or prototype or pre-version
+to draft
+a mock-up
+
+rub it in
+Ex. I know I made a mistake, don't rub it in!
+---> don't remind me about something that makes me feel bad
+
+straighten out
+---> to organize/to fix/to figure out
+Ex. You need to straighten out your room!
+straighten up
+Ex. We need to straighten out the problem with the clients before they get too upset.
+to solve/to figure out
+
+rates
+Once these jobs are done
+Once these jobs have been done
+malware
+prevents the customers from buying things
+prevent from
+
 2017-6-26
 =========
 "we might have to improvise"
