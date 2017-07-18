@@ -1,3 +1,67 @@
+2017-7-17
+=========
+No one slept so much as an hour
+---> No one even slept one hour
+ancient ways
+traditional ways
+the way it was done in the past
+to back (something)
+
+TO DIVE IN(TO)
+---> start doing something with a lot of motivation/concentration/
+to really get in to something from the start
+Ex. Let's just dive into our project today, so that we don't have to worry so much about it later.
+Ex. I really just want to dive into my new job.
+to have a strong and sudden start
+go for it
+don't hesitate
+
+TO FLAKE (ON)
+TO FLAKE---> to not show up to a planned meeting/event/gathering that you said you would go to
+Ex. Did he show up at your party? ---> No, he flaked.
+TO FLAKE ON (SOMEONE)--->
+to have promised/told someone that you would go or join them for something, but then you don't show up/you have some excuse not to go
+Ex. He always flakes on me when we are supposed to have dinner.
+someone who flakes is unreliable
+
+HANDS DOWN
+----> completely/certainly/definitely
+Ex. Is he reliable?
+---> Oh yeah, hands down
+Ex. Who do you think will win the game?
+---> The Tigers, hands down.
+CAN YOU HEAR ME?
+
+TO PAN OUT
+TO PAN
+---> to develop the result/the process of getting to the result
+(a positive result)
+Ex. That job didn't really pan out.
+Ex. I really want this investment to pan out.
+
+TO PHASE OUT
+---> to end something in steps
+Ex. We need to phase out the company because it is no longer successful.
+A HAND-DOWN
+---> something passed from an older person to a younger person that has been used
+Ex. I always get hand-downs from my brother.
+(I get his old clothes, toys, etc)
+IF YOU HAD $100,000 DOLLARS, WHAT WOULD YOU DO WITH IT? SPEND IT? INVEST IT? ON/IN WHAT? WHY?
+Travel the world
+Travel the United States
+by this way X
+in this way
+(correct)
+by the way
+invest in ourselves
+hang out
+travel all of the world
+travel all over the world
+travel all over the U.S.
+I think study is really....
+studying
+
+
 2017-7-10
 =========
 in full force
