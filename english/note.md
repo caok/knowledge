@@ -1,3 +1,116 @@
+
+WHAT ARE THE BENEFITS AND DRAWBACKS OF CHAIN STORES VERSUS LOCALLY-OWNED BUSINESSES?
+(think about this question as a customer, employee, owner, in terms of profit, etc.)
+
+
+2017-7-31
+=========
+a ton
+"up to no good"
+up to = doing
+---> doing something you shouldn't be
+Jiang He left group chat.
+Jiang He joined group chat.
+  
+  in change
+  here
+  here's your change
+  Jiang He joined group chat.
+  Jiang He left group chat.
+    
+to nail (something) ---> to do something successfully/very well/maybe perfectly
+hit the nail on the head
+---> get something perfectly right/ exactly
+TO THROW YOURSELF INTO
+---> to give much of your effort to doing something/ to do something enthusiastically
+Ex. He threw himself into his work after his break up, so that he would not be thinking of her.
+TO TRADE UP
+to exchange for something better
+Ex. I finally traded up and got the new iPhone.
+TO WIMP OUT
+---> to not do something in the end because you are afraid/scared to do it
+Ex. We were going to go sky diving, but then he wimped out at the last second.
+Ex. He was such a wimp.
+TO TACKLE
+TO WARM UP TO (SOMEONE/AN IDEA)
+---> to become more comfortable or accepting of someone or an idea
+Ex. It took me a while to warm up to him because I thought he was not a nice guy.
+Ex. I haven't warmed up to the idea that I have to wake up at 5am every day.
+WHAT DOES A TYPICAL WORK DAY LOOK LIKE FOR YOU? AND WHAT DO YOU WISH WAS DIFFERENT ABOUT IT?
+(AND WHY?)
+CONSISTS OF
+TO SPEND TIME WITH
+TO IMPROVE MY HEALTH
+TO DO EXERCISE
+TO EXCISE
+***TO EXERCISE
+TO WORK OUT
+grocery (grow-sher-y)
+TO TAKE A NAP
+you said: that's the most part of my work day
+change to: that's the main part of my work day
+change to: that's most of my work day
+
+
+
+2017-7-24
+=========
+to drive a bargain
+to bargain ---> to try and get a better deal
+to swipe (something- like a book, a phone)
+1. to take
+2. to steal
+3. to grab and take with you
+packed = crowded
+TO BRING IN
+---> to move/carry inside of a place
+---> to use someone's extra skills
+(Ex. We needed to bring in another coder for that project.
+---> to earn/raise/make money
+(Ex. Last year, we brought in 20 million in profits.
+TO BRING ON
+---> to cause something to happen
+(Ex. The cold weather brought on my sickness)
+(Ex. He brought on his own troubles)
+TO BRING Up
+---> to braise
+*raise
+(children)
+---> to introduce or start a discussion (on a certain topic/idea)
+(Ex. He brought up his break-up with his girlfriend last night when we were at dinner. )
+---> to mention
+(Ex. He mentioned the movie several times in our conversation last night.
+**brought up
+---> to remember or talk about something from the past
+(Ex. Every time I go to this restaurant, it brings up happy feelings).
+(Ex. This movie brings up sadness for me)/
+TO PULL OFF
+---> to take off
+---> to succeed in what you are trying to do
+(Ex. We finally pulled off a first-place win last weekend!)
+(Ex. He pulled off not going to work three days in a row)
+(Ex. We pulled off the surprise. She had no idea that we were waiting to celebrate her birthday)
+ROUND UP
+---> to collect/organize together
+(Can you please round up all of the receipts from last year?)
+---> to make a number into the nearest whole number
+(Ex. 1.5 rounds to 2)
+*rounds up to 2
+(Ex. 1.3 rounds down to 1)
+SCREW UP
+/MESS UP
+---> to make a mistake
+(Ex. He messed up the report, so now we have to redo it. )
+a screw-up
+---> a person who screws up very often
+WHAT IS ONE POSITIVE CHANGE YOU THINK NEEDS TO BE MADE IN YOUR CITY?
+HOW DO YOU THINK THIS COULD BE DONE?
+government housing
+government houses
+instructional
+parents like me
+every parent
+
 2017-7-17
 =========
 No one slept so much as an hour
