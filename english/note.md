@@ -1,6 +1,267 @@
 
+2017-10-16
+==========
+put it out of its pain/misery
+---> to kill something that is in a lot of pain
+the point of no return
+I am of the opinion
+that.....
+still + (-er) --> even more
+to have a fit ---> to be outwardly upset
+to throw a fit
+to have a coughing fit
+to have a laughing fit
+(out of control)
+common sense
+"'CHANGE OF HEART"
+Ex. He was going to kill the man, but then he had a change of heart.
+---> to change one's mind based on the realization of some morals or kindness
+"BALLPARK"
+---> around/estimated/about
+Ex. How many do you think we have...ballpark?
+Ex. How many do you think we have?
+-- I don't know the exact number
+-- Well, just ballpark figures.
+Approximate
+"BEST BET"
+Ex. Choosing this service is our best bet.
+---> the best choice based on my calculations/evaluation
+(without all the information/taking a chance)
+Ex. Leaving at 3:30pm is your best bet to avoiding traffic.
+"CUTE IT OUT!
+*CUT
+---> STOP IT
+
+2017-9-25
+=========
+SECOND TO NONE
+---> the best
+Ex. The pie at that restaurant is second to none!
+That company is second to none
+ROAD RAGE
+---> the feeling of anger toward other drivers
+Ex. How do you express your road rage?
+TO CATCH (SOMEONES) EYE
+---> something catches that person's eye
+Ex. That fancy watch really caught his eye.
+IN A BIND
+---> in a position/situation that is tricky/difficult to get out of/impossible to get out of
+Ex. I'm in a bind because my babysitter didn't show up. Now I can't go to work.
+Ex. I'm in a bind with four tests and a paper this week.
+I won't be able to do anything else.
+ON (SOMEONE'S) BACK
+Ex. Get off my back!
+(Leave me alone)
+((SOMEONE) IS ON (SOMEONE'S) BACK
+---> someone is always pressuring you/checking on you excessively (too much)
+bothering you about something
+Ex. My boss is on my back about this report.
+YOU NAME IT.
+---> means "anything"
+(as a response to a question of options)
+Ex. We can go to any restaurant, you name it.
+Ex. We can go on vacation anywhere, you name it!
+Ex. I owe you. Seriously, whenever you need something, you name it.
+MIXED FEELINGS
+---> feeling uncertain/not sure how to feel
+Ex. I have mixed feelings about the president.
+YOU REALLY KNOW YOUR STUFF.
+---> you know a lot about something/how to do something/the details of something
+"we work remote" --->
+"WE WORK REMOTELY"
+"we will not" --->
+"WE DO NOT"
+"the most drawbacks" --->
+"THE BIGGEST DRAWBACK"
+TO BE A GOOD FIT (WITH A COMPANY/ORGANIZATION/ETC.)
+"we have some people in American" --->
+"SOME PEOPLE IN AMERICA"
+"spend some time to..." --->
+"SPEND SOME TIME (DOING)"
+"to go vacation" --->
+"TO GO ON VACATION"
+THAT WOULD BE OF BENEFIT TO ME
+"we are spending a lot time to meeting"
+---> WE SPEND A LOT OF TIME MEETING
+---> WE SPEND A LOT OF TIME IN MEETINGS
+
+
+2017-9-11
+=========
+work your fingers to the bone
+= to work extremely hard
+(usually with something physical)
+work something out
+= find a solution to a problem
+it will work out
+= it will be okay
+eager beaver
+Don't be an eager beaver
+= calm down/be patient
+to have a cow
+= to get upset
+about something
+(clearly upset -yelling, fighting, etc.)
+Ex. My parents had a cow after I crashed their car.
+Don't have a cow!
+= Stay calm, don't get upset!
+keep (your) head above the water
+trying to survive
+spring to life
+the light of (someone's) life
+= someone who makes that person very happy or hopeful or motivated
+
+2017-8-21
+=========
+to have something against someone
+---> to have negative feelings toward someone
+Ex. What do you have against him?
+had it not been for...
+---> if it had not been this way/happened this way, there would have been a different outcome
+reminder
+remainder
+nature
+natural
+last for the remainder of
+remainder = what is left over
+the remainder of my life = the rest of my life
+enough to last
+to last for + length of time
+Ex. We have enough money to last for this month, but after that, we will have none.
+(we will run out of money after one month)
+Ex. I've had enough arguments about Trump to last me for a lifetime.
+(I don't want or need any more of this experience)
+to hold someone responsible - to blame them
+to wash your hands of something --->
+to get rid of a responsibility/feeling/guilt/etc.
+TO SET BACK/A SET BACK --->
+something that reverses progress
+Ex. The rain was a major setback for our progress building the house.
+The rain set us back...
+TO GET AWAY WITH --->
+to succeed in doing something bad without getting in trouble/getting caught
+Ex. The criminals got away with the robbery.
+TO STORM OFF --->
+to leave in an obviously angry manner
+Ex. He stormed off after his parents told him that he could not go to the party.
+TO SPIRAL OUT OF CONTROL --->
+to become out of control
+(a strong/serious way of saying this)
+Ex. He spiraled out of control when it came to his addiction.
+Ex. The protest spiraled out of control and three people died.
+HOW HAS THE INTERNET IMPROVED OUR LIVES? HAS IT CREATED ANY PROBLEMS?
+progress
+vs.
+problems
+too much time
+spend too much time
+too many times
+
+
+2017-8-14
+=========
+on the go
+---> while you are going somewhere/moving/on the move
+Ex. I need to eat lunch on the go today because I am so busy.
+fun-loving people---> people who love having fun
+hang-out place ---> a place where people hang out
+to dash ---> to run quickly for a short distance
+
+He had a nice, warm smile and his success hadn't gone to his head.
+ego
+a person's sense of self-esteem or self-importance
+to let something go to your head ---> to not be humble
+having or showing a modest or low estimate of one's own importance.
+Ex. The win went to her head.
+
+TO CALL OFF
+---> to cancel
+Ex. They called off the party because it was raining.
+TO GIVE IN (TO SOMETHING)
+---> surrender
+Ex. After he asked me ten times, I finally gave in (to him)
+TO MOVE ON
+---> to keep going/continue after something
+TO PUT UP WITH
+---> to tolerate/endure/accept something
+Ex. I have to put up with my coworker, even though I think she is very annoying.
+
+RUN FOR (an elected position)
+Ex. He is running for president of Colombia.
+Ex. He is running for treasurer.
+TO RUN THROUGH...
+---> to practice/rehearse/go over
+Ex. I ran through the presentation three times before the meeting.
+TO STAND FOR...
+---> to support and idea/belief/opinion
+Ex. I stand for human rights.
+Ex. I stand for peace.
+---> IMF stands for International Monetary Fund.
+---> to show what an abbreviation means
+---> Ex. Democracy stands for being able to vote.
+---> means/consists of
+made up of
+This team stands for justice, patience, kindness.
+
+CAN YOU THINK OF SOMETHING THAT YOU PUT UP WITH BECAUSE YOU HAVE TO?
+attraction
+vs.
+distraction
+"issues we need to do"
+fix
+solve
+handle
+address
+"we can take a consider for..."
+then we can consider doing these things
+then we can take into consideration doing these things
+CAN YOU THINK OF A SITUATION WHERE YOU HAD TO GIVE IN TO SOMETHING/SOMEONE?
+
 WHAT ARE THE BENEFITS AND DRAWBACKS OF CHAIN STORES VERSUS LOCALLY-OWNED BUSINESSES?
 (think about this question as a customer, employee, owner, in terms of profit, etc.)
+
+2017-8-7
+========
+to head out ---> to leave
+Ex. We need to head south.
+Ex. It's getting late, I need to head out.
+
+to snuff at something ---> to make disapproving noises at something
+sprang to his feet ---> jumped to his feet
+passion or passionate?
+something on your back can mean you are supporting that thing
+to have a responsibility
+TO PITCH IN
+Ex. 1: We need $50 for the party.
+2: I can pitch in $10.
+---> to contribute
+TO SHOOT FOR/AIM FOR
+---> to try for a specific goal
+Ex. This month we need to shoot for three days of work abroad.
+SHOOT TO ---> (same meaning followed by an action/verb)
+Ex. We need to shoot to finish ten projects this month.
+TO HOLD BACK
+---> to prevent yourself/something from giving all of your effort/work
+not giving everything you have
+Ex. He couldn't hold back his tears at the funeral.
+Ex. We need to hold him back from graduating.
+JUST IN TIME
+---> arrived right before something started/happened
+(not late, but just on time)
+(also not quite early)
+Ex. He arrived just in time for the movie.
+TAKE YOUR TIME
+---> to do something slowly/in a relaxed and careful way
+(opposite would be to RUSH)
+TIME AFTER TIME
+---> again and again
+Ex. He has been in trouble time after time.
+"TIME IS MONEY"
+DO YOU AGREE?
+on the surface....
+the surface meaning is.....
+the deeper meaning is...
+convenience store
 
 
 2017-7-31

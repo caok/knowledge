@@ -7,8 +7,9 @@ sudo apt-get -y install oracle-java8-installer
 
 ### install elasticsearch
 ```
-wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
-echo "deb https://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
 sudo apt-get update && sudo apt-get install elasticsearch
 ```
 sudo vi /etc/elasticsearch/elasticsearch.yml
@@ -31,9 +32,9 @@ sudo groupadd -g 999 kibana
 sudo useradd -u 999 -g 999 kibana
 ```
 ```
-cd ~; wget https://download.elastic.co/kibana/kibana/kibana-4.6.1-linux-x86_64.tar.gz
+cd ~; wget https://artifacts.elastic.co/downloads/kibana/kibana-5.6.3-linux-x86_64.tar.gz
 tar xvf kibana-*.tar.gz
-vi ~/kibana-4*/config/kibana.yml
+vi ~/kibana-5*/config/kibana.yml
 ```
 找到server.host，替换IP地址为 “localhost”：
 ```
@@ -42,7 +43,7 @@ server.host: "localhost"
 把Kibana放在适当的目录：
 ```
 sudo mkdir -p /opt/kibana
-sudo cp -R ~/kibana-4*/* /opt/kibana/
+sudo cp -R ~/kibana-5*/* /opt/kibana/
 sudo chown -R kibana: /opt/kibana
 ```
 ```
@@ -104,8 +105,35 @@ echo "deb https://packages.elastic.co/logstash/2.4/debian stable main" | sudo te
 sudo apt-get update && sudo apt-get install logstash
 ```
 
+```
+input {
+  beats {
+    port => 5043
+    type => 'log'
+  }
+}
 
+filter {
+  mutate{
+    split=>["message"," object: "]
+    add_field => {
+      "object" => "%{[message][1]}"
+    }
+  }
+  json{
+    source => "object"
+    target => "obj"
+  }
+}
 
+output {
+  elasticsearch {
+    hosts => ["https://search-logstash-nl4zzj2wi7yolqz4utr2nqgr3e.us-east-1.es.amazonaws.com:443"]
+    ssl => "true"
+    manage_template => false
+  }
+}
+```
 
 ### install beats
 ```
@@ -122,8 +150,10 @@ paths:
 - /home/deploy/app/feedmob_tracking/shared/log/production.log
 - /home/deploy/app/feedmob_tracking/shared/log/unicorn.stderr.log
 
+注释掉elasticsearch部分的配置
 logstash:
 hosts: ["log.techbay.club:5043"]
+hosts: ["54.89.6.80:5043"]
 
 ```
 
