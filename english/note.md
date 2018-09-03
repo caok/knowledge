@@ -1,4 +1,303 @@
 
+2017-12-4
+=========
+tendency
+common sense
+Get a grip!
+(control yourself)
+my skipped a beat
+funny business = joking around/messing around/playing around
+IT'S NONE OF YOUR BUSINESS
+Ex. Please butt out, this is none of your business.
+MIND YOUR OWN BUSINESS
+SHORT ON CASH
+---> to not have enough money
+/not have very much money
+SHORT ON TIME
+not enough time/ not very much time
+TO BE BROKE
+---> to have no/very little money
+Ex. Do you want to go out to dinner? ---> Sorry, I can't, I'm broke.
+WELL-OFF
+(adj. off)
+---> to have a lot of money
+Ex. He is very well-off.
+TO MAKE A KILLING
+---> to make a lot of money
+Ex. That company made a killing last quarter.
+Ex. He made a killing on that invention.
+"KILL THE LIGHTS"
+HE'S KILLING IT!
+---> he is very successful right now / he is doing very well with something
+FILTHY RICH
+---> very wealthy
+RAKING IN THE CASH/DOUGH
+---> to make a lot of money
+ROLLING IN DOUGH
+---> making/having a lot of money
+SHE'S A NATURAL.
+---> naturally very good at something/ born with the talent
+"NOT SO FAST!"
+---> don't leave so quickly!
+come back here
+HOLD YOUR HORSES
+---> slow down!
+IF YOU HAD THE OPPORTUNITY TO TRAVEL TO SPACE, WOULD YOU? WHY/WHY NOT? WOULD YOU HAVE ANY FEARS OR BE PARTICULARLY EXCITED ABOUT ANYTHING?
+dream-like
+anti-gravity
+the oxygen will be used up
+
+
+2017-11-27
+==========
+of all (something plural)
+---> usually has to do with choosing one thing over the other things in the same category
+Ex. Why would he choose to buy that shirt of all the shirts (in the store)?
+UP TO SPEED
+Ex. He has been gone from work for two weeks, so I had to get him up to speed.
+updated/to have all the current information
+get up to speed
+bring up to speed
+BEND OVER BACKWARDS
+---> to make great effort to help someone
+Ex. Mothers often bend over backwards to make sure their children are happy.
+TO GIVE SOMEONE FREE REIN
+---> to allow someone to be in control/to let someone do something with full control
+Ex. My teacher gave us free reign when it came to deciding which book we wanted to read and write a paper on.
+RULE OF THUMB
+---> a personal principle
+Ex. As a rule of thumb, I never eat date anyone who has been a criminal.
+TO MISS THE POINT
+---> to misunderstand/ to not understand the point that someone is trying to make
+NO STRINGS ATTACHED
+(strings = conditions/stipulations)
+Ex. Whenever you start a free trial for Netflix, there are some strings attached.
+VANISH INTO THIN AIR
+---> to disappear suddenly in an unknown way
+Ex. After chasing the criminal for a while, he seemed to disappear into thin air.
+SLINKING AWAY
+MAKE ENDS MEET
+---> make/find just enough money to pay your bills
+(with no extra money left over)
+Ex. After having two children, we are finding it hard to make ends meet.
+Ex. After three years of medical school, the students have thoroughly worn away.
+TO GET ON MY NERVES
+---> to be annoyed by something/someone
+Ex. This crying baby is getting on my nerves.
+HANDLING COMPLAINTS
+DEAL WITH COMPLAINTS
+**we try to find what's the problem for this complaint***communicate with client**
+**to keep polite to your customer***give you more reaction**(feedback?)
+**try to discuss about this**
+to have a discussion about
+**the person who was complained***make both of you to solve things**
+
+2017-11-20
+==========
+TO PAY THE PRICE (FOR SOMETHING)
+---> to suffer the consequences
+(of something)
+Ex. Going to jail is the price you pay when you break the law.
+Ex. He had to pay the price for his crimes by going to jail.
+SECOND TO NONE
+---> FIRST/TOP
+EX. This cake is second to none.
+(the best)
+TO LET OFF STEAM
+---> to release anger / frustration
+Ex. I'm going to the gym to let off some steam.
+TO GO ALL OUT
+---> to use all of your energy/resources to do something
+Ex. She went all out for this party.
+TO HAVE (SOMETHING) IN THE BAG
+---> certain/secured
+(something is)
+Ex. We've got this football game in the bag.
+(it is certain that we will win)
+Ex. I've got this meeting in the bag.
+Ex. I've got a hold on my drinking.
+"in the palm of my hand"
+PULL YOUR WEIGHT
+---> to do your share/part of the work; to contribute your fair effort
+Ex. He never pulls his weight during group projects.
+"I'M ALL EARS"
+
+Can you hear that?
+I'm listening to music
+---> I'm listening intently
+What is your intention?
+IN TURN
+---> individually, in order that it happened, sequentially
+one by one
+too much noise
+too many noises
+
+
+2017-11-13
+==========
+as luck would have it = fortunately
+as bad/ill luck would have it = unfortunately
+it is not possible to come at a better time
+= you come at the best time
+Ex. You couldn't have shown up at a worse time, it just started raining.
+---> You show at the worst time
+a roof over our heads = a place to live
+/house
+you shouldn't compare apples to oranges
+THE BOTTOM LINE
+---> the final result/the outcome will be.../the criterion
+Ex. The bottom line is that we need to pay our rent or we will be evicted.
+The bottom line is that we will be evicted if we don't pay our rent.
+ONLY A MATTER OF TIME
+Ian Xiong left group chat.
+Ian Xiong joined group chat.
+
+Jaqueline L Foxworth	10:30 AM
+(here "only" is expressing a type of criteria or contingency/something that it depends on)
+---> something will inevitably happen sooner or later
+Ex. It's only a matter of time before it rains again.
+Ex. It's only a matter of time before we all die.
+Ian Xiong left group chat.
+Ian Xiong joined group chat.
+
+Jaqueline L Foxworth	10:33 AM
+BE THAT AS IT MAY
+---> even though_is true.../even so....
+Ex. He is very young. Be that as it may, he is extremely intelligent and advanced in thought.
+UP IN THE AIR
+---> uncertain/undecided/undetermined
+Ex. Our plans this for this weekend are up in the air.
+ICING ON THE CAKE
+---> the additional thing that makes something become great/the best part
+Ex. Getting to go to sleep early was the icing on the cake of my eventful and wonderful day.
+Ex. Having a child was the icing on the cake to a fantastic year.
+TO BE IN THE RED
+---> to be loosing money/at a deficit
+Ex. The company is operating in the red.
+IN FORM OF
+IN THE FORM OF
+IN TERMS OF
+---> (related to _)
+connected to / specifically having to do with _
+Ex. In terms of grades, she's doing great, but in terms of behavior, she is doing poorly.
+WHEN IT COMES TO...
+AS FOR
+FAIR ENOUGH
+IF YOU COULD HAVE ONE SUPER POWER (SUPER-HUMAN OR NON-HUMAN ABILITY), WHAT WOULD IT BE, AND WHY?
+
+
+2017-11-6
+=========
+TO CAVE vs. TO CAVE IN
+to cave in --->(physical or representative)
+physically when a cave falls in and is closed (no longer open)
+representative --->
+Ex. I Finally caved in and bought the new iPhone
+To finally agree to something you previously wouldn't before
+Ex. She finally caved and accepted his offer to go on a date.
+to cave ---> (only used representatively)
+TO BE BROKE
+---> to have no money
+Ex. I'm broke after paying all my bills.
+bankrupt
+AHEAD OF THE CURVE
+---> to be more advanced than the competition
+Ex. We felt like we were ahead of the curve after doing drills for five hours.
+BEHIND THE SCENES
+Ex. The inspector got a behind the scenes look of the factory.
+---> the work and people who do the work that are not shown in the final product of something
+TO COME UP SHORT
+---> not quite
+(almost, but not completely)
+Ex. You came up short on your quota this month, so we're going to have to let you go.
+Ex. This essay really came up short compared your previous work.
+'LET'S GET DOWN TO BUSINESS'
+---> let's begin
+let's get to work
+(let's start doing some specific project)
+CAN YOU PLEASE DESCRIBE TO ME A TIME THAT YOU FAILED AND LEARNED A LOT FROM IT?
+I received an A on the test.
+There was a difficult question on the test.
+to cause (something) to do (something)
+
+
+2017-10-30
+==========
+immense display of....(something)
+Ex. Immense display of support.
+Ex. Immense display of courage.
+SARCASTIC
+SARCASM
+1. GET A KICK OUT OF (SOMETHING)
+---> to be amused by something or think it's funny
+Ex. The kids got a kick out of the movie that we went to .
+Ex. I got a real kick out of knowing that my old evil boss got fired.
+2. CROSS YOUR FINGERS
+---> to be hopeful/wish
+Ex. The school team has a competition on Friday, cross your fingers that we win!
+
+3. TO BE IN HOT WATER
+Ex. I'm in hot water with my boss for being late this week.
+---> to be in danger/trouble
+Ex. (On a space ship in space) We're in hot water without any more fuel.
+4. A CHANGE OF HEART
+---> to change your mind/emotions from one to another thing
+Ex. I had a change of heart toward her after she apologized and we had a better relationship after that.
+Ex. I had a change of heart after watching a film on oil companies, and now, I will vote against their power.
+5. A BREATH OF FRESH AIR
+---> describes the experience of something fresh and new or relieving
+Ex. After a long day at work, seeing my friends for drinks was a breath of fresh air.
+(contrast is important here)
+6. GET (YOUR) ACT TOGETHER
+---> improve the way you are doing things (only used in pretty extreme situations)
+Ex. You have shown up to work drunk twice this week. You need to get your act together!
+---> collect/organize your mess and do better
+Ex. We need to get our act together because the project is due tomorrow.
+HOW DO YOU COPE/DEAL WITH STRESS? WHAT ARE SOME GOOD STRESS RELIEVERS IN YOUR OPINION?
+
+
+2017-10-23
+==========
+off...go ---> to go/to start/to move
+To list all available commands enter "/?".
+  
+I'm off ---> I'm leaving
+Ex. Off we go to our vacation adventure!
+below the threshold ---> not good enough
+Ex. He is in his own universe.
+that's enough= enough is enough
+(no more please)
+Ex. I've never gotten a score as bad as this one.
+= this is the worst score I have ever gotten
+Ex. I've never had cake as good as this.
+AS MUCH BY...AS BY....
+= EQUALLY BY... AND ...
+'OUT OF NOWHERE'
+---> used when the source of something is unknown to the observer OR suddenly appeared OR unexpected
+Ex. The car came out of nowhere and hit the cyclist.
+Ex. The teacher was talking about Biology, when one of his students asked, "Have you heard Taylor Swift's new song?"
+Then the teach says , "that question came out of nowhere."
+Ex. He broke up with me out of nowhere. Everything seemed fine.
+'OFF THE HOOK'
+---> to be in trouble but somehow get out of that trouble
+Ex. The police officer let me off the hook after he pulled me over for speeding.
+Ex. I got off the hook when the police officer was called to another more important situation.
+A SIGHT FOR SORE EYES
+---> beautiful/visually appealing
+Ex. This painting is a sight for sore eyes.
+Ex. You are a sight for sore eyes.
+A CAP
+---> a limit
+Ex. This university puts a cap on the number of students admitted each year.
+TO CAP IT OFF
+---> to finish something
+Ex. The dinner was wonderful and to cap it off, they served 3 different kinds of dessert.
+TO NIGHT CAP
+*A NIGHT CAP
+---> a drink to finish the night
+Ex. Can I interest you in a night cap?
+WHAT IS THE BEST WAY TO BALANCE WORK AND YOUR PERSONAL/FAMILY LIFE?
+
 2017-10-16
 ==========
 put it out of its pain/misery
